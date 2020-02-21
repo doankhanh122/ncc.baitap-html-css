@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1% 1% 0;
+    color: grey;
+}
+
+.header,
+.navbar li a,
+.sidebar-content,
+footer {
+    background-color: #ededed;
+
+}
+
+/* Center text for Header, navbar, sidebar and footer  */
+.header,
+.navbar,
+.sidebar,
+footer {
+    text-align: center;
+}
+
+/* Set 200px width fixed for navbar & sidebar  */
+.nav-items,
+.sidebar-content {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 200px;
+}
+
+/* Navbar, content and sidebar in 1 line  */
+.main-body {
+    display: flex;
+    width: 100%;
+}
+
+
+/* header */
+.header h1 {
+    padding: 30px;
+
+
+}
+
+
+/* nav bar  */
+
+/* remove default effect for list  */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.navbar li a {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    text-decoration: none;
+    color: black
+}
+
+
+
+/* sidebar  */
+.sidebar-content {
+    padding: 20px 5px 30px;
+    margin: 5px 0;
+    
+
+}
+
+
+
+/* content */
+.content {
+    background-color: yellow;
+    padding: 30px 30px 20px 20px;
+}
+
+
+/* footer  */
+footer {
+    padding: 5px;
+    margin: 5px 0;
+
+}
+
+@media screen and (max-width: 620px) {
+
+    .main-body {
+        display: initial;
+    }
+
+    /* Set 100% width 1 line each for navbar & sidebar  */
+    .nav-items,
+    .sidebar-content {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .navbar li a {
+        
+        margin-bottom: 0;
+    }
+
+}
